@@ -4,9 +4,9 @@
     ViewData["Title"] = "Stwórz Zadanie";
 }
 
-<h1>Stwórz Zadanie</h1>
+<h1 class="text-light">Stwórz Zadanie</h1>
 
-<h5>Uzupełnij informacje</h5>
+<h5 class="text-light">Uzupełnij informacje</h5>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,19 +14,19 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <p>Tytuł
-                <input asp-for="Title" class="form-control" />
+                    <input asp-for="Title" class="form-control bg-dark text-light" />
                 <span asp-validation-for="Title" class="text-danger"></span>
                 </p>
             </div>
             <div class="form-group">
                 <p>Opis
-                <input asp-for="Description" class="form-control" />
+                    <input asp-for="Description" class="form-control bg-dark text-light" />
                 <span asp-validation-for="Description" class="text-danger"></span>
                 </p>
             </div>
             <div class="form-group">
                 <p>Nagroda
-                <input asp-for="Reward" class="form-control" />
+                <input asp-for="Reward" class="form-control bg-dark text-light" />
                 <span asp-validation-for="Reward" class="text-danger"></span>
                 </p>
             </div>
